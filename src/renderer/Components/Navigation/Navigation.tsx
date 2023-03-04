@@ -1,8 +1,11 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const Navigation = () => {
   return (
-    <div>Navigation</div>
+    <div>
+      <a href="">DashBoard</a>
+    </div>
   )
 }
 

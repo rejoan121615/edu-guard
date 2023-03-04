@@ -1,10 +1,11 @@
 import { MemoryRouter as Router, Routes, Route } from 'react-router-dom';
+import Navigation from './Components/Navigation/Navigation';
 
 function Hello() {
   return (
-    <div>
-      <h1>hello rejoan</h1>
-    </div>
+    <>
+      <Navigation />
+    </>
   );
 }
 
