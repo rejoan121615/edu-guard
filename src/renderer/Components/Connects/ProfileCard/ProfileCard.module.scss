@@ -1,16 +1,86 @@
-@import '../../../Scss/partials/colors';
+@import '../../../Scss/partials/link';
 
 .card {
   padding: 30px;
   box-sizing: border-box;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
 }
 
-
 .imgCon {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
-  border: 5px solid $yellow-dark;
+  border: 3px solid $yellow-dark;
+  @extend %center;
+  margin-bottom: 20px;
+  .imgWrap {
+    width: 105px;
+    height: 105px;
+    @extend %center;
+    overflow: hidden;
+    border-radius: 50%;
+    img {
+      height: 100%;
+    }
+  }
+}
+
+.name {
+  color: $gray-dark;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 25px;
+  width: 100%;
+  & > div {
+    &:first-child {
+      border-right: 2px solid $black-light;
+    }
+  }
+  .title {
+    color: $black-mid;
+    margin-bottom: 3px;
+  }
+  .value {
+    color: $black-dark;
+  }
+
+  .title,
+  .value {
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+.btnList {
+  color: $gray-dark;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  .btn {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 25px 1fr;
+    background-color: $blue-light;
+    border-radius: 5px;
+    border: none;
+    width: 100px;
+    height: 32px;
+    padding-left: 10px;
+    p {
+      text-transform: capitalize;
+      text-align: left;
+      font-weight: 500;
+    }
+  }
 }
