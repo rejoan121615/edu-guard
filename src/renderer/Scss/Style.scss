@@ -15,15 +15,32 @@ body {
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template: 'navigation content' 1fr / 250px 1fr;
-    column-gap: 10px;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 75px 1fr;
+    grid-template-areas: "nav header" "nav content";
+
+    gap: 10px;
     padding: 10px;
     background-color: #e8ecf0;
   }
 }
 
 
-.section-wrap {
+.sec-mask {
   border-radius: 10px;
   background-color: white;
 }
+
+#nav {
+  grid-area: nav;
+  padding: 25px;
+}
+
+#header {
+  grid-area: header;
+}
+
+#content {
+  grid-area: content;
+}
+
