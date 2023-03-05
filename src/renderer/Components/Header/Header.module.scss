@@ -1,0 +1,93 @@
+@import '../../Scss/partials/link';
+
+.header {
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 1fr 40px 50px;
+  column-gap: 35px;
+}
+
+.profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  @extend %center;
+  overflow: hidden;
+
+  img {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.notification {
+  position: relative;
+  @extend %center;
+  .notBtn {
+    position: relative;
+    font-size: 22px;
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    @extend %center;
+    cursor: pointer;
+    color: $black-mid;
+    &:hover {
+      background-color: $black-light;
+    }
+
+    // status
+    .status {
+      width: 7px;
+      height: 7px;
+      position: absolute;
+      right: 10px;
+      top: 8px;
+      z-index: 50;
+      background-color: #eb5757;
+      border-radius: 50%;
+      display: none;
+    }
+  }
+}
+
+.search {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  position: relative;
+  .searchBox {
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    // background-color: rebeccapurple;
+    width: 100%;
+    height: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .searchBtn {
+    position: absolute;
+    background-color: transparent;
+    z-index: 50;
+    border: none;
+    right: 10px;
+    top: 8px;
+    color: $gray-mid;
+    font-size: 26px;
+    cursor: pointer;
+    width: 34px;
+    height: 34px;
+    @extend %center;
+    border-radius: 50%;
+    &:hover {
+      background-color: $black-light;
+    }
+  }
+}

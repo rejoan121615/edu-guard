@@ -42,6 +42,41 @@ const Connects = () => {
       id: 1454125,
       name: 'Ananto',
     },
+    {
+      img: Person,
+      id: 1274256,
+      name: 'Mohd Rejoan',
+    },
+    {
+      img: Person,
+      id: 1277638,
+      name: 'Nasir Shah',
+    },
+    {
+      img: Person,
+      id: 1454125,
+      name: 'Ananto',
+    },
+    {
+      img: Person,
+      id: 1457896,
+      name: 'Saddam Hafiz Alif',
+    },
+    {
+      img: Person,
+      id: 1274256,
+      name: 'Mohd Rejoan',
+    },
+    {
+      img: Person,
+      id: 1277638,
+      name: 'Nasir Shah',
+    },
+    {
+      img: Person,
+      id: 1454125,
+      name: 'Ananto',
+    },
   ];
 
   return <div className={Cls.list}>{
