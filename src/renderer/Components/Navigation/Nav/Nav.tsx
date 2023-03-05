@@ -11,46 +11,55 @@ const Nav = () => {
     {
       title: 'home',
       Icon: AiFillHome,
-      url: './home'
+      url: './home',
+      iconSize: '20px',
     },
     {
       title: 'Class & Notices',
       Icon: MdGroups2,
-      url: './class-&-notices'
+      url: './class-&-notices',
+      iconSize: '20px',
     },
     {
       title: 'Connects',
       Icon: MdConnectWithoutContact,
-      url: './connects'
+      url: './connects',
+      iconSize: '23px',
     },
     {
       title: 'Share Center',
       Icon: SiWindows11,
-      url: './share-center'
+      url: './share-center',
+      iconSize: '15px',
     },
     {
       title: 'Profile',
       Icon: BsFillPersonFill,
-      url: './profile'
+      url: './profile',
+      iconSize: '19px',
     },
     {
       title: 'Setting',
       Icon: IoSettingsSharp,
-      url: './setting'
+      url: './setting',
+      iconSize: '18px',
     },
     {
       title: 'Logout',
       Icon: MdLogout,
-      url: './logout'
+      url: './logout',
+      iconSize: '18px',
     },
   ];
 
   return (
-    <div>
+    <div className="nav-list">
       {navList.map((Item, index) => {
         return (
-          <NavLink to={Item.url} key={index}>
-            <Item.Icon />
+          <NavLink className={'nav-item'} to={Item.url} key={index}>
+            <span className="icon" style={{fontSize: Item.iconSize}}>
+              <Item.Icon />
+            </span>
             <p>{Item.title}</p>
           </NavLink>
         );
