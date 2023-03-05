@@ -1,0 +1,16 @@
+@import '../../../Scss/partials/colors';
+
+.card {
+  padding: 30px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+
+.imgCon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid $yellow-dark;
+}

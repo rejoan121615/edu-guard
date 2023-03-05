@@ -1,4 +1,4 @@
-import { MemoryRouter as Router, Routes, Route } from 'react-router-dom';
+import { MemoryRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Navigation from './Components/Navigation/Navigation';
 import Header from './Components/Header/Header';
 import Content from './Components/Content/Content';
@@ -26,7 +26,8 @@ export default function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Structure />}>
-          <Route index path="home" element={<Home />} />
+          <Route index element={<Navigate to='home' />} />
+          <Route path="home" element={<Home />} />
           <Route path="class-&-notices" element={<ClassNotices />} />
           <Route path="connects" element={<Connects />} />
           <Route path="share-center" element={<ShareCenter />} />

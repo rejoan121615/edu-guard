@@ -56,8 +56,8 @@ const Nav = () => {
     <div className="nav-list">
       {navList.map((Item, index) => {
         return (
-          <NavLink className={'nav-item'} to={Item.url} key={index}>
-            <span className="icon" style={{fontSize: Item.iconSize}}>
+          <NavLink className={`nav-item`} to={Item.url} key={index}>
+            <span className="icon" style={{ fontSize: Item.iconSize }}>
               <Item.Icon />
             </span>
             <p>{Item.title}</p>
