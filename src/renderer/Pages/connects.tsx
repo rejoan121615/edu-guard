@@ -3,7 +3,6 @@ import Person from '../../../assets/person.jpg';
 import ProfileCard from 'renderer/Components/Connects/ProfileCard/ProfileCard';
 import Cls from './Scss/Connects.module.scss';
 
-
 const Connects = () => {
   // demi person list
   const StudentList = [
@@ -79,11 +78,22 @@ const Connects = () => {
     },
   ];
 
-  return <div className={Cls.list}>{
-    StudentList.map((data, index) => {
-      return <ProfileCard key={index} img={data.img} name={data.name} id={data.id.toString()} />
-    })
-  }</div>;
+  return (
+    <div className={Cls.ListCon}>
+      <div className={Cls.list}>
+        {StudentList.map((data, index) => {
+          return (
+            <ProfileCard
+              key={index}
+              img={data.img}
+              name={data.name}
+              id={data.id.toString()}
+            />
+          )
+        })}
+      </div>
+    </div>
+  );
 };
 
 export default Connects;

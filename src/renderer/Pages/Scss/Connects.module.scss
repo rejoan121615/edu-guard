@@ -1,6 +1,21 @@
+@import '../../Scss/partials/link';
 .list {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   padding: 35px;
   gap: 25px;
+  @include resp (1200px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include resp (1500px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @include resp (2000px) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.ListCon {
+  height: calc(100vh - 110px);
+  overflow-y: scroll;
 }
