@@ -92,3 +92,15 @@ body {
     }
   }
 }
+
+
+.shadow {
+background: #FFFFFF;
+box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+border-radius: 10px;
+}
+
+.contentWrap {
+  height: calc(100vh - 110px);
+  overflow-y: auto;
+}

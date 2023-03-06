@@ -79,7 +79,7 @@ const Connects = () => {
   ];
 
   return (
-    <div className={Cls.ListCon}>
+    <div className={'contentWrap'}>
       <div className={Cls.list}>
         {StudentList.map((data, index) => {
           return (

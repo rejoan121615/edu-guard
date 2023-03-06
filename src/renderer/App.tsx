@@ -5,7 +5,7 @@ import Content from './Components/Content/Content';
 // pages 
 import Home from './Pages/Home';
 import ClassNotices from './Pages/Class-&-notices';
-import Connects from './Pages/Connects';
+import Connects from './Pages/connects';
 import ShareCenter from './Pages/share-center';
 import Profile from './Pages/profile';
 import Setting from './Pages/setting';

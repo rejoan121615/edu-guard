@@ -1,0 +1,17 @@
+@import '../../../Scss/partials/link';
+
+.batch {
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.green {
+  background-color: $batch-green;
+}
+
+.pink {
+  background-color: $batch-pink;
+}
