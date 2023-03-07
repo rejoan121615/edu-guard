@@ -3,12 +3,13 @@ import Cls from './Batch.module.scss';
 
 type props = {
   txt: string,
-  type: string
+  type: string,
+  className: string
 }
 
-const Batch = ( {txt, type}: props) => {
+const Batch = ( {txt, type, className}: props) => {
   return (
-    <div className={`${Cls.batch} ${type === 'pink' ? Cls.pink : Cls.green}`}>{txt}</div>
+    <div className={`${Cls.batch} ${className} ${type === 'pink' ? Cls.pink : Cls.green}`}>{txt}</div>
   )
 }
 
