@@ -10,7 +10,7 @@ const UploadComponent = () => {
       <Batch className='' txt="Upload" type="green" />
       {/* upload function  */}
       <div className={Cls.FileWrap}>
-        <MdCloudUpload className={Cls.icon} />
+        <MdCloudUpload className={Cls.uploadIcon} />
         <p>Click for upload or drag and drop here</p>
       </div>
       {/* progress  */}

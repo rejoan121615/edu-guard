@@ -23,6 +23,14 @@
     font-size: 100px;
     color: $blue-dark;
   }
+  .uploadIcon {
+    @extend .icon;
+  }
+
+  .downloadIcon {
+    @extend .icon;
+    color: $yellow-dark;
+  }
 }
 
 .ongoing {

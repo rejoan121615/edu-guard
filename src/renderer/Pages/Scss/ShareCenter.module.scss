@@ -1,8 +1,14 @@
+@import '../../Scss/partials/link';
 .parent {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1.4fr 1fr;
-  grid-template-areas: 'upload download batchMate' 'softList softList batchMate';
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "batchMate batchMate" "upload download" "softList softList";
+  @include resp (1200px) {
+
+    grid-template-columns: repeat(3, 1fr);
+    // grid-template-rows: 1.4fr 1fr;
+    grid-template-areas: 'upload download batchMate' 'softList softList batchMate';
+  }
   height: 100%;
   padding: 25px;
   gap: 15px;
