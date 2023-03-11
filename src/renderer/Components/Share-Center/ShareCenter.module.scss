@@ -7,12 +7,18 @@
   // grid-template-rows: 35px 1fr 100px;
   padding: 15px;
   justify-items: flex-start;
+  align-items: flex-start;
+  align-content: space-between;
   row-gap: 40px;
   .ongoing {
     .batch {
       margin-bottom: 15px;
     }
   }
+}
+
+.cardPad {
+  padding: 15px;
 }
 
 .FileWrap {
@@ -75,4 +81,53 @@
   @extend %center;
   justify-content: space-between;
   margin-bottom: 10px;
+}
+
+
+
+// computer style 
+.Computer {
+  grid-area: batchMate;
+}
+
+.compList {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 15px;
+  margin-top: 20px;
+}
+
+
+
+
+.computerNode {
+  padding: 10px 15px;
+  border-radius: 6px;
+  background-color: $blue-dark;
+  color: white;
+  @extend %center;
+  justify-content: space-between;
+  cursor: pointer;
+  .details {
+    @extend %center;
+    .user {
+      margin-left: 15px;
+    }
+  }
+  .imgWrap {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    @extend %center;
+    overflow: hidden;
+    img {
+      width: auto;
+      height: 100%;
+    }
+  }
+
+
+  .details {
+
+  }
 }
