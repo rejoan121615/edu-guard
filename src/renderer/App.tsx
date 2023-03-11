@@ -7,7 +7,7 @@ import Home from './Pages/Home';
 import ClassNotices from './Pages/Class-&-notices';
 import Connects from './Pages/connects';
 import ShareCenter from './Pages/share-center';
-import Profile from './Pages/profile';
+import Profile from './Pages/Profile';
 import Setting from './Pages/setting';
 import Logout from './Pages/logout';
 

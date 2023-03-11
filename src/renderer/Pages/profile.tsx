@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
+import PersonalInfo from 'renderer/Components/Profile/PersonalInfo/PersonalInfo';
+import Cls from './Scss/Profile.module.scss';
 
-const profile = () => {
+
+const Profile = () => {
   return (
-    <div>profile</div>
+    <div className={`sec-mask shadow ${Cls.profile}`}>
+      <PersonalInfo />
+    </div>
   )
 }
 
-export default profile
+export default Profile;;
