@@ -2,6 +2,7 @@ import React from 'react';
 import Cls from './ProfileCard.module.scss';
 import { BsMessenger } from 'react-icons/bs';
 import { CgDetailsMore } from 'react-icons/cg';
+import CircularBorderImg from 'renderer/Components/Ui/CircularBorderImg/CircularBorderImg';
 
 type Props = {
   img: any;
@@ -12,10 +13,8 @@ type Props = {
 const ProfileCard = ({ img, name, id }: Props) => {
   return (
     <div className={Cls.card}>
-      <div className={Cls.imgCon}>
-        <div className={Cls.imgWrap}>
-          <img src={img} alt="profile image" />
-        </div>
+      <div className={Cls.imgWrap}>
+        <CircularBorderImg img={img} />
       </div>
       <h3 className={Cls.name}>{name}</h3>
       <div className={Cls.details}>

@@ -10,24 +10,11 @@
   align-items: center;
 }
 
-.imgCon {
+.imgWrap {
   width: 120px;
   height: 120px;
-  border-radius: 50%;
-  border: 3px solid $yellow-dark;
-  @extend %center;
-  margin-bottom: 20px;
-  .imgWrap {
-    width: 105px;
-    height: 105px;
-    @extend %center;
-    overflow: hidden;
-    border-radius: 50%;
-    img {
-      height: 100%;
-    }
-  }
 }
+
 
 .name {
   color: $gray-dark;

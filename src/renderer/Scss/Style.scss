@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import '../Scss/partials/link';
+
 
 // color varialble
 $blue-dark: #7f85f9;
@@ -103,4 +105,15 @@ border-radius: 10px;
 .contentWrap {
   height: calc(100vh - 110px);
   overflow-y: auto;
+}
+
+.btn {
+  border: none;
+  background-color: $black-light;
+  padding: 12px 18px;
+  border-radius: 10px;
+  @extend %center;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
 }

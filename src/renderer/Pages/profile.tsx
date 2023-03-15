@@ -5,7 +5,7 @@ import Cls from './Scss/Profile.module.scss';
 
 const Profile = () => {
   return (
-    <div className={`sec-mask shadow ${Cls.profile}`}>
+    <div className={`${Cls.profile}`}>
       <PersonalInfo />
     </div>
   )
